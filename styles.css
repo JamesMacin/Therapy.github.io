@@ -1,0 +1,64 @@
+/* Header */
+
+.navigation {
+    position: relative;
+    text-align: center;
+}
+
+.hamburger-menu {
+    display: none; /* Hide by default on larger screens */
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-list li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.menu-list li a:hover {
+    background-color: #f0f0f0;
+}
+
+@media only screen and (max-width: 600px) {
+    .hamburger-menu {
+        display: block; /* Show hamburger menu on smaller screens */
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+
+    .menu-list {
+        display: none; /* Hide menu by default on smaller screens */
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+        padding: 10px 0;
+    }
+
+    .menu-list.show {
+        display: block; /* Show menu when hamburger menu is clicked */
+    }
+
+    .menu-list li {
+        display: block;
+        margin: 10px 0;
+        text-align: center;
+    }
+}
+
+
+
