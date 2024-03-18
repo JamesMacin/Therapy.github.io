@@ -8,9 +8,7 @@
 </head>
 <body>
     <nav class="navigation">
-        <div class="hamburger-menu">
-            <div class="hamburger"></div>
-        </div>
+        <div class="hamburger-menu">☰</div>
         <ul class="menu-list">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -25,8 +23,19 @@
         </ul>
     </nav>
 
-    <!-- Your other HTML content goes here -->
-
-    <script src="scripts.js"></script>
-</body>
-</html>
+        <h2>Sign Up</h2>
+        <form action="signup_process.php" method="post">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br>
+            
+            <label for="confirm_password">Confirm Password:</label><br>
+            <input type="password" id="confirm_password" name="confirm_password" required><br>
+            
+            <input type="submit" value="Sign Up">
+        </form>
+    </body>
+    </html>
+    
