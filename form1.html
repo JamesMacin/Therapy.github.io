@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navigation">
+        <ul class="menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tools and resources.html">Tools and Resources</a></li>
+            <li><a href="book an appointment.html">Book Appointment</a></li>
+            <li><a href="register.html">New Users Register</a></li>
+            <li><a href="signin.html">Sign In</a></li>
+        </ul>
+    </nav>
+
+    <div class="button-container">
+        <a href="book an appointment.html" class="button">Book Appointment</a>
+        <a href="tools and resources.html" class="button">Tools and Resources</a>
+    </div>
+
+    <div>
+        <h1>User Form</h1>
+        
+        <p>Please rate your experience from 1-5</p>
+
+        <form action="form1.php" method="POST"> <!--sends the form info to the php called process form-->
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+            <br> <!-- Add a line break -->
+
+            <label for="question1">I often worry that my partner will stop loving me</label>
+            <input type="number" id="question1" name="question1" required>
+            <br> <!-- Add a line break -->
+
+            <label for="question2">I find it easy to be affectionate with my partner</label>
+            <input type="number" id="question2" name="question2" required>
+            <br> <!-- Add a line break -->
+
+            <label for="question3">I fear that once someone gets to know me, they won't like who I am</label>
+            <input type="number" id="question3" name="question3" required>
+            <br> <!-- Add a line break -->
+
+            <label for="question4">I find I bounce back quicky after a breakup, its weird how I can just put somenone out of my mind</label>
+            <input type="number" id="question4" name="question4" required>
+            <br> <!-- Add a line break -->
+
+            <label for="question5">When Im not involved in a relationship, I feel somewhat anxious and incomplete</label>
+            <input type="number" id="question5" name="question5" required>
+            <br> <!-- Add a line break -->
+
+            <label for="question6">I find it difficult to emotionally support my partner when they are feeling down</label>
+            <input type="number" id="question6" name="question6" required>
+            <br> <!-- Add a line break -->
+
+            <label for="question7">When my partner is away, I'm affraid that they might beceome interested in someone else</label>
+            <input type="number" id="question7" name="question7" required>
+            <br> <!-- Add a line break -->
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
